@@ -27,141 +27,39 @@ import {
 } from "../assets/icons";
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+    { name: "Python", imageUrl: "/assets/images/python.jpeg" },
+    { name: "C++", imageUrl: "/assets/images/cpp.png" },
+    { name: "Java", imageUrl: "/assets/images/java.jpeg" },
+    { name: "MySQL", imageUrl: "/assets/images/mysql.png" },
+    { name: "Machine Learning", imageUrl: "/assets/images/machinelearning.jpeg" },
+    { name: "Deep Learning", imageUrl: "/assets/images/deeplearning.jpeg" },
+    { name: "Langchain", imageUrl: "/assets/images/Langchain.jpeg" },
+    { name: "Natural Language Processing (NLP)", imageUrl: "/assets/images/NLTK.png" },
+    { name: "Tensorflow", imageUrl: "/assets/images/Tensorflow.jpeg" },
+    { name: "Shell Programming", imageUrl: "/assets/images/shell.jpeg" },
+    { name: "HTML", imageUrl: "/assets/images/HTML.jpg" },
+    { name: "CSS", imageUrl: "/assets/images/CSS.png" },
+    { name: "React.js", imageUrl: "/assets/images/React.jpeg" },
+    { name: "Node.js", imageUrl: "/assets/images/node.png" }
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
+        title: "AI-Based Investment Allocation System",
+        description: "Developed an AI solution for senior citizens, optimizing investment allocation using an AI Agent.",
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
+        title: "Spam Detection System",
+        description: "Built a spam detection model using NLP and deep learning techniques.",
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
+        title: "UCF Crime Analysis",
+        description: "Analyzed crime data using YOLO for object detection and ML models for predictive insights.",
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+        title: "Energy-Aware Video Processing Framework",
+        description: "Designed an OpenMP-based parallel framework for energy-efficient video processing.",
+    }
 ];
 
 export const socialLinks = [
@@ -173,12 +71,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/Ankit1923-mr',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/ankit-kumar-11322228b/',
     }
 ];
 
@@ -186,43 +84,43 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'Balancing Ball',
+        description: 'A amazing css animation which depicts  the balancing of a ball on a semicircualar sturcture.',
+        link: 'https://github.com/Ankit1923-mr/Balancing-Ball',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Rock Paper Scissors Thread',
+        description: 'A multithreaded Rock Paper Scissors game that enhances concurrency and game responsiveness.',
+        link: 'https://github.com/Ankit1923-mr/RockPaperScissorThread',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Word Scramble',
+        description: 'A fun and challenging word puzzle game where players rearrange letters to form meaningful words.',
+        link: 'https://github.com/Ankit1923-mr/WordScramble',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Typing Speed Checker',
+        description: 'A web-based tool to test and improve typing speed with real-time accuracy tracking.',
+        link: 'https://github.com/Ankit1923-mr/TypingSpeedChecker',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Virtual Piano',
+        description: 'A web-based piano simulator that allows users to play and practice music with interactive keys.',
+        link: 'https://github.com/Ankit1923-mr/VirtualPiano',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        name: 'Ball Board Game',
+        description: 'A strategic ball board game where players navigate the board and tries to keep the ball above the ground.',
+        link: 'https://github.com/Ankit1923-mr/BallBoardGame',
     }
 ];

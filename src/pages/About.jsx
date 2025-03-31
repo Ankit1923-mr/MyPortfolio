@@ -4,9 +4,45 @@ import {
 } from "react-vertical-timeline-component";
 
 import { CTA } from "../components";
-import { experiences, skills } from "../constants";
+import { experiences } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
+
+const skills = [
+  { name: "Python", imageUrl: "/assets/images/python.jpeg" },
+  { name: "C++", imageUrl: "/assets/images/cpp.png" },
+  { name: "Java", imageUrl: "/assets/images/java.jpeg" },
+  { name: "MySQL", imageUrl: "/assets/images/mysql.png" },
+  { name: "Machine Learning", imageUrl: "/assets/images/machinelearning.jpeg" },
+  { name: "Deep Learning", imageUrl: "/assets/images/deeplearning.jpeg" },
+  { name: "Langchain", imageUrl: "/assets/images/Langchain.jpeg" },
+  { name: "Natural Language Processing (NLP)", imageUrl: "/assets/images/NLTK.png" },
+  { name: "Tensorflow", imageUrl: "/assets/images/Tensorflow.jpeg" },
+  { name: "Shell Programming", imageUrl: "/assets/images/shell.jpeg" },
+  { name: "HTML", imageUrl: "/assets/images/HTML.jpg" },
+  {name:"CSS" , imageUrl: "/assets/images/CSS.png"},
+  { name: "React.js", imageUrl: "/assets/images/React.jpeg" },
+  { name: "Node.js", imageUrl: "/assets/images/node.png" },
+];
+
+const projects = [
+  {
+    title: "AI-Based Investment Allocation System",
+    description: "Developed an AI solution for senior citizens, optimizing investment allocation using an AI Agent.",
+  },
+  {
+    title: "Spam Detection System",
+    description: "Built a spam detection model using NLP and deep learning techniques.",
+  },
+  {
+    title: "UCF Crime Analysis",
+    description: "Analyzed crime data using YOLO for object detection and ML models for predictive insights.",
+  },
+  {
+    title: "Energy-Aware Video Processing Framework",
+    description: "Designed an OpenMP-based parallel framework for energy-efficient video processing.",
+  },
+];
 
 const About = () => {
   return (
@@ -14,16 +50,14 @@ const About = () => {
       <h1 className='head-text'>
         Hello, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
-          {" "}
-          Adrian
+          Ankit
         </span>{" "}
         👋
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+          Software Engineer based in India, specializing in AI, Machine Learning, and Full-Stack Development. I have hands-on experience with Python, ML/DL frameworks, and frontend/backend development using React and Node.js.
         </p>
       </div>
 
@@ -47,59 +81,36 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
+        <h3 className='subhead-text'>Work Experience & Projects</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            I've worked on AI and full-stack projects, implementing solutions using Python, ML/DL, React.js, and Node.js.
           </p>
         </div>
 
         <div className='mt-12 flex'>
           <VerticalTimeline>
-            {experiences.map((experience, index) => (
+            {projects.map((project, index) => (
               <VerticalTimelineElement
-                key={experience.company_name}
-                date={experience.date}
-                iconStyle={{ background: experience.iconBg }}
-                icon={
-                  <div className='flex justify-center items-center w-full h-full'>
-                    <img
-                      src={experience.icon}
-                      alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
-                    />
-                  </div>
-                }
+                key={project.title}
+                date="Project"
+                iconStyle={{ background: "#ff9f00" }}
+                icon={<div className='flex justify-center items-center w-full h-full'>📌</div>}
                 contentStyle={{
                   borderBottom: "8px",
                   borderStyle: "solid",
-                  borderBottomColor: experience.iconBg,
+                  borderBottomColor: "#ff9f00",
                   boxShadow: "none",
                 }}
               >
                 <div>
                   <h3 className='text-black text-xl font-poppins font-semibold'>
-                    {experience.title}
+                    {project.title}
                   </h3>
-                  <p
-                    className='text-black-500 font-medium text-base'
-                    style={{ margin: 0 }}
-                  >
-                    {experience.company_name}
+                  <p className='text-black-500 font-medium text-base'>
+                    {project.description}
                   </p>
                 </div>
-
-                <ul className='my-5 list-disc ml-5 space-y-2'>
-                  {experience.points.map((point, index) => (
-                    <li
-                      key={`experience-point-${index}`}
-                      className='text-black-500/50 font-normal pl-1 text-sm'
-                    >
-                      {point}
-                    </li>
-                  ))}
-                </ul>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
